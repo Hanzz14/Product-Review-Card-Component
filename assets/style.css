@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    max-width: 100%;
+    border-radius: 16px 16px 0px 0px;
+}
+body{
+    font-size: 14px;
+    background-color: hsl(30, 38%, 92%);
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 0.1px);
+    margin: 40px 40px;
+}
+
+
+article:last-child{
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 0px 0px 16px 16px;
+    padding-bottom: 10px;
+}
+
+h2{
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: hsl(228, 12%, 48%);
+    margin: 20px;
+    margin-top: -4px;
+    padding-top: 20px;
+}
+
+h1{
+    font-family: 'Fraunces', sans-serif;
+    margin: 20px;
+    font-size: 32px;
+    padding-right: 60px;
+    margin-top: -10px;
+}
+
+p{
+    margin: 20px;
+    margin-top: -10px;
+    line-height: 140%;
+    color:hsl(228, 12%, 48%);
+    padding-right: 50px;
+}
+
+button,
+li {
+    font-family: inherit;
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    margin-top: 40px;
+}
+
+.discount{
+    font-size: 32px;
+    font-family: 'Fraunces', sans-serif;
+    color: hsl(158, 36%, 37%);
+}
+
+li:last-child{
+    margin-left: 30px;
+    text-decoration: line-through;
+}
+
+.container{
+    max-width: 600;
+}
+
+button{
+    background-color: hsl(158, 36%, 37%);
+    color: #fff;
+    font-weight: 700;
+    padding: 20px 40px;
+    width: 90%;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+button img{
+    margin-right: 8px;
+}
+
+button:hover{
+    background-color: hsl(158, 35%, 19%);;
+}
+
+.attribution{
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a{
+    color: hsl(228, 45%, 44%);
+}
+
+@media (min-width:640px){
+    picture img {
+        height: 100%;
+    }
+
+    article:first-child{
+        overflow: auto;
+        float: left;
+        width: 50%;
+    }
+
+    img{
+        border-radius: 16px 0px 0px 16px;
+    }
+
+    body article:last-child{
+        overflow: auto;
+        float: right;
+        width: 50%;
+        height: 100%;
+        border-radius: 0px 16px 16px 0px;
+    }
+}
